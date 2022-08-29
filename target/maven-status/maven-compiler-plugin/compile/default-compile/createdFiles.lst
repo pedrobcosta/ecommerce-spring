@@ -1,1 +1,5 @@
 com\letscode\ecommerce\EcommerceApplication.class
+com\letscode\ecommerce\models\Cliente.class
+com\letscode\ecommerce\endpoints\HelloEndpoints.class
+com\letscode\ecommerce\services\impl\HelloServiceImpl.class
+com\letscode\ecommerce\services\HelloService.class
