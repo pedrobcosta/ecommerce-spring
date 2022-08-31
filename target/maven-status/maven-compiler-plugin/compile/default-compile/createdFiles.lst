@@ -5,7 +5,6 @@ com\letscode\ecommerce\dto\ClienteDto.class
 com\letscode\ecommerce\restclient\FinanceiroRestClient.class
 com\letscode\ecommerce\services\ClienteService.class
 com\letscode\ecommerce\configuration\SwaggerConfig.class
-com\letscode\ecommerce\endpoints\EcommerceApplication.class
 com\letscode\ecommerce\endpoints\ClienteEndpoints.class
 com\letscode\ecommerce\services\HelloService.class
 com\letscode\ecommerce\EcommerceApplication.class

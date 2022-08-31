@@ -19,7 +19,7 @@ public class ClienteEndpoints {
 
 
     @RequestMapping(path="/cliente", method = RequestMethod.GET, produces = APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Cliente>> getAllCients() {
+    public ResponseEntity<List<Cliente>> getAllClients() {
         List<Cliente> clienteList = clienteService.listarTodosClientes();
 
         return ResponseEntity.ok(clienteList);

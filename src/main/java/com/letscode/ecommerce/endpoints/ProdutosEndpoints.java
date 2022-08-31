@@ -12,9 +12,9 @@ import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-@EnableFeignClients(
-    basePackages = {"com.letscode.ecommerce.restclient", 
-    "com.letscode.ecommerce.endpoints"})
+// @EnableFeignClients(
+//     basePackages = {"com.letscode.ecommerce.restclient", 
+//     "com.letscode.ecommerce.endpoints"})
 @RestController
 public class ProdutosEndpoints {
 
