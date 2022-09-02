@@ -1,4 +1,6 @@
 com\letscode\ecommerce\dao\ClienteDao.class
+com\letscode\ecommerce\models\Produto.class
+com\letscode\ecommerce\services\ProdutoService.class
 com\letscode\ecommerce\models\Cliente.class
 com\letscode\ecommerce\services\impl\ClienteServiceImpl.class
 com\letscode\ecommerce\dto\ClienteDto.class
@@ -8,6 +10,9 @@ com\letscode\ecommerce\configuration\SwaggerConfig.class
 com\letscode\ecommerce\endpoints\ClienteEndpoints.class
 com\letscode\ecommerce\services\HelloService.class
 com\letscode\ecommerce\EcommerceApplication.class
+com\letscode\ecommerce\dto\ProdutoDto.class
 com\letscode\ecommerce\endpoints\HelloEndpoints.class
 com\letscode\ecommerce\services\impl\HelloServiceImpl.class
 com\letscode\ecommerce\endpoints\ProdutosEndpoints.class
+com\letscode\ecommerce\services\impl\ProdutoServiceImpl.class
+com\letscode\ecommerce\dao\ProdutoDao.class
