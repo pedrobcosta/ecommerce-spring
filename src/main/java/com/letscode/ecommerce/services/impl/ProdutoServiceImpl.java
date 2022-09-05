@@ -1,14 +1,14 @@
 package com.letscode.ecommerce.services.impl;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.letscode.ecommerce.dao.ProdutoDao;
 import com.letscode.ecommerce.dto.ProdutoDto;
 import com.letscode.ecommerce.models.Produto;
 import com.letscode.ecommerce.services.ProdutoService;
 
+@Service
 public class ProdutoServiceImpl implements ProdutoService{
 
     @Autowired
@@ -38,15 +38,29 @@ public class ProdutoServiceImpl implements ProdutoService{
     }
 
     @Override
-    public boolean atualizarProduto(Produto produto) {
-        // TODO Auto-generated method stub
-        return false;
+    public boolean atualizarProduto(long id, ProdutoDto produtoDto) {
+        try {
+            Produto produto = produtoDao.findById(id).get();
+            produto.setNome(produtoDto.getNome());
+            produto.setPreco(produtoDto.getPreco());
+            produto.setDescricao(produtoDto.getDescricao());
+            produtoDao.save(produto);
+            return true;
+        }
+        catch (Exception e) {
+            return false;
+        }
     }
 
     @Override
     public boolean removerProduto(long id) {
-        // TODO Auto-generated method stub
-        return false;
+        try {
+            produtoDao.deleteById(id);
+            return true;
+        }
+        catch(Exception e) {
+            return false;
+        }
     }
     
 }

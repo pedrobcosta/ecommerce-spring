@@ -7,9 +7,9 @@ public interface ProdutoService {
     
     Produto listarProduto(long id);
 
-    boolean novoProduto(ProdutoDto produto);
+    boolean novoProduto(ProdutoDto produtoDto);
 
-    boolean atualizarProduto(Produto produto);
+    boolean atualizarProduto(long id, ProdutoDto produtoDto);
 
     boolean removerProduto(long id);
 

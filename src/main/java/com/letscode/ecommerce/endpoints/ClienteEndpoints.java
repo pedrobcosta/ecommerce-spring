@@ -26,14 +26,14 @@ public class ClienteEndpoints {
     }
 
     @RequestMapping(path="/cliente", method = RequestMethod.POST)
-    public ResponseEntity novoCliente(@RequestBody ClienteDto cliente) {
+    public ResponseEntity<String> novoCliente(@RequestBody ClienteDto cliente) {
         boolean sucesso = clienteService.novoCliente(cliente);
 
         if(sucesso) {
-            return new ResponseEntity("Cliente criado com sucesso!", HttpStatus.CREATED);
+            return new ResponseEntity<String>("Cliente criado com sucesso!", HttpStatus.CREATED);
         }
         else {
-            return new ResponseEntity("Criacao do cliente falhou!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<String>("Erro ao criar o cliente", HttpStatus.BAD_REQUEST);
         }
     }
 
